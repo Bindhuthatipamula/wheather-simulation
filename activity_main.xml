@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        tools:ignore="RedundantNamespace">
+
+        <!-- Foreground Service Controls -->
+        <Button
+            android:id="@+id/startServiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Start Weather Service"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/stopServiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Stop Weather Service"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <!-- Simulate Weather Alerts -->
+        <Button
+            android:id="@+id/sendWeatherAlertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Weather Alert"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <!-- Display Connection Status -->
+        <TextView
+            android:id="@+id/connectionStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connection Status: Unknown"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Periodic Weather Updates -->
+        <TextView
+            android:id="@+id/weatherUpdatesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather Updates: None"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
